@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+header{
+    background: #2D25A0;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+
+.menu{
+    width: 1000px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.ul ul{
+    list-style-type: none;
+    display: flex;
+}
+.ul ul li{
+    margin-right: 29px;
+}
+.ul ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.side_btn i{
+    margin-right: 10px;
+}
+.side_btn a{
+    text-decoration: none;
+    color: white;
+    background: #E02C6D;
+    padding: 10px 25px;
+    width: 200px;
+    transition: all 1s ease;
+}
+.side_btn a:hover{
+    transform: scale(1.05);
+    background: none;
+    box-shadow:0 0 10px #2196f3,0 0 10px #2196f3,0 0 10px #2196f3,0 0 10px #2196f3 ;
+}
+.left_info h1{
+    color: white;
+    font-weight: bold;
+    font-size: 64px;
+}
+.under_menu{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+.under_menu img{
+    width: 556px;
+    height: 438px;
+    
+}
+.left_info{
+    padding: 80px;
+    margin-top: -80px;
+
+}
+.side_image_right img{
+    margin-top: 100px;
+}
+.grid{
+    width: 1050px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+.blogs{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+}
+.blog{
+    width: 300px;
+    height: 474px;
+    padding: 10px;
+    box-shadow: 0 0 40px gray;
+}
+.blog img{
+    width: 300px;
+    height: 256px;
+}
+.bbtn{
+    margin-left: 100px;
+    width: 1050px;
+    background: #E02C6D;
+    text-align: center;
+    margin: 0
+    auto;
+    padding: 10px 25px;
+}
+
+
+
+.left_info a{
+    position: absolute;
+    margin-top: 30px;
+    color: white;
+    background: #E02C6D;
+    text-decoration: none;
+    padding: 10px 25px;
+    transition: all 1s ease;
+}
+.left_info a:hover{
+    color: #E02C6D;
+    background:white ;
+    transform: scale(1.05);
+    background: none;
+    box-shadow:0 0 10px #2196f3,0 0 10px #2196f3,0 0 10px #2196f3,0 0 10px #2196f3 ;
+}
+.font{
+    font-size: 48px;
+    font-weight: bold;
+}
+.footer{
+    margin-top: 50px;
+}
+.football{
+    width: 484px;
+    height: 150px;
+    margin:  0 auto;
+}
+.football img{
+    width: 483px;
+    height: 110px;
+}
+.social_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 15px;
+    width: 170px;
+    height: 32px;
+    margin: 0 auto;
+    
+}
+.icon{
+    width: 32px;
+    height: 32px;
+    background: #E7E7E8;
+    border-radius: 50%;
+    position: relative;
+}
+.icon i{
+    color: #969BAB;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+footer h3{
+    text-align: center;
+    padding: 100px 0 100px 0;
+    margin-top: -80px;
+}
+.comment{
+    width: 100%;
+    height: 400px;
+    color:white;
+    margin-left: 50px;
+}
+.comment input,textarea{
+    background: #2D25A0;
+    border: none;
+    border-bottom: 1px solid white;
+    width: 25%;
+}
+.comment label{
+    font-size: 25px;
+}
+.contact{
+    display: flex;
+    background: #2D25A0;
+    padding: 50px;
+}
+.comment a{
+    position: absolute;
+    margin-top: 30px;
+    color: white;
+    background: #E02C6D;
+    text-decoration: none;
+    padding: 10px 25px;
+    transition: all 1s ease;
+}
+.comment a:hover{
+    color: #E02C6D;
+    background:white ;
+    transform: scale(1.05);
+    background: none;
+    box-shadow:0 0 10px #2196f3,0 0 10px #2196f3,0 0 10px #2196f3,0 0 10px #2196f3 ;
+}
+@media only screen and (max-width:668px){
+    .menu ul{
+        width: 100%;
+        overflow: hidden;
+    }
+    .grid,.under_menu,.for_comment{
+        display: none;
+    }
+}
+@media only screen and (max-width:1000px){
+    .menu ul{
+        width: 100%;
+        overflow: hidden;
+    }
+    .newResponse-md{
+        grid-template-columns: 1fr;
+    }
+    .nR-md{
+        grid-template-columns: 1fr;
+    }
+    .nR-md.blogs{
+        grid-template-columns: 1fr;
+    }
+}
